@@ -1,0 +1,57 @@
+<style>
+    .cocochoco {
+    }
+    p {
+        font-family: roboto, arial;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    body {
+        height: 1000px;
+        padding-top: 65px;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        background-color: white;
+        left: 0;
+        top: 0;
+        height: 60px;
+        right: 0;
+    }
+    .left-section {
+        margin-left: 20px;
+        margin-right: 100px;
+        display: flex;
+        align-items: center;
+    }
+    .middle-section {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    .right-section {
+        margin-left: 100px;
+        margin-right: 20px;
+        display: flex;
+    }
+    .search-text {
+        border-radius: 2px;
+        border-color: transparent;
+        background-color: gold;
+        flex: 1;
+        height: 34px;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
+        max-width: 800px;
+    }
+    .search-text::placeholder {
+        font-family: Roboto, Arial;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .fa-solid.fa-magnifying-glass {
+    }
+</style>
