@@ -64,7 +64,7 @@
         max-height: 400px;
         padding-right: 18px;
     }
-    .navbar-products ul  {
+    .navbar-products li {
         background-color: rgb(52, 7, 214);
         margin: 0;
         padding: 0;
@@ -84,5 +84,10 @@
     }
     .navbar-products ul {
         float: left;
+    }
+    .ahanzen-logo {
+        width: 40px;
+        height: 40px;
+        padding-right: 6px;
     }
 </style>
