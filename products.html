@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>PRODUCTS</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -7,40 +7,123 @@
     <link rel="icon" href="imagery/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/f6e715e5c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="header">
-    <div class="left-section">
-        <a href="index.html"><img src="imagery/ahanzen-logo.jpg" class="ahanzen-logo" style="
-        width: 40px;
-        height: 40px;
-        padding-right: 6px;
-    "></a><p>¡BIENVENIDO AL PORTAL DE AHANZEN!</p></div>
+<div class="left-section">
+    <a href="index.html"><img src="imagery/ahanzen-logo.jpg" class="ahanzen-logo" style="
+    width: 40px;
+    height: 40px;
+    padding-right: 6px;
+"></a><p>¡BIENVENIDO AL PORTAL DE AHANZEN!</p></div>
 <div class="middle-section">
-    <input type="text" placeholder="Search" class="search-text">
-        <button>
-            <i class="fa-solid fa-magnifying-glass fa-5x"></i>
-        </button>
-    </div>
+<input type="text" placeholder="Search" class="search-text">
+<button><i class="fa-solid fa-magnifying-glass fa-3x"></i></button>    
+</div>
 <div class="right-section">
-    <a href="cart.html">
-        <button>
-            <i class="fa-solid fa-cart-shopping fa-5x"></i>
-        </button>
-    </a>
+<a href="cart.html">
+<button><i class="fa-solid fa-cart-shopping fa-3x"></i></button>
+</a>
 </div>
 </div>
 <div class="products">
-    <a target="_blank"><img src="imagery/Consola Xbox.jpg" alt="Consola Xbox"></a>
+    <a target="_blank" href="cart.html"><img src="imagery/Consola Xbox.jpg" alt="Consola Xbox"></a>
     <div class="product-description">CONSOLA XBOX</div>
+    <div class="product-reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
 </div>
 <div class="products">
-    <a target="_blank"><img src="imagery/PLAY STATION 4.png" alt="Consola PlayStation"></a>
+    <a target="_blank" href="cart.html"><img src="imagery/PLAY STATION 4.png" alt="Consola PlayStation"></a>
     <div class="product-description">CONSOLA PLAYSTATION</div>
+    <div class="product-reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
 </div>
 <div class="products">
-    <a target="_blank"><img src="imagery/NINTENDO-SWITCH.png" alt="Nintendo Switch"></a>
-    <div class="product-description">NINTENDO SWTICH</div>
+    <a target="_blank" href="cart.html"><img src="imagery/NINTENDO-SWITCH.png" alt="Nintendo Switch"></a>
+    <div class="product-description">NINTENDO SWITCH</div>
+    <div class="product-reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
 </div>
+<div class="products">
+    <a target="_blank" href="cart.html"><img src="imagery/Casa en Belen.jpg" alt="Casa Belen"></a>
+    <div class="product-description">CASA BELEN</div>
+    <div class="product-reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+</div>
+<div class="products">
+    <a target="_blank" href="cart.html"><img src="imagery/Casa Manantiales.png" alt="Casa Manantiales"></a>
+    <div class="product-description">CASA MANANTIALES</div>
+    <div class="product-reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+</div>
+<div class="products">
+    <a target="_blank" href="cart.html"><img src="imagery/Casa unifamiliar.png" alt="Casa unifamiliar"></a>
+    <div class="product-description">CASA UNIFAMILIAR</div>
+    <div class="product-reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+</div>
+<div class="carousel-container">
+    <!--<i class="fa-solid fa-square-caret-left fa-2x"></i>-->
+    <div class="carousel">
+        <img src="imagery/ahanzen-logo.jpg" class="carousel-img" alt="AHANZEN LOGO">
+        <img src="imagery/ahanzen-logo.jpg" class="carousel-img" alt="AHANZEN LOGO">
+        <img src="imagery/ahanzen-logo.jpg" class="carousel-img" alt="AHANZEN LOGO">
+        <img src="imagery/ahanzen-logo.jpg" class="carousel-img" alt="AHANZEN LOGO">
+        <img src="imagery/ahanzen-logo.jpg" class="carousel-img" alt="AHANZEN LOGO">
+        <img src="imagery/ahanzen-logo.jpg" class="carousel-img" alt="AHANZEN LOGO">
+        <img src="imagery/ahanzen-logo.jpg" class="carousel-img" alt="AHANZEN LOGO">
+        <img src="imagery/ahanzen-logo.jpg" class="carousel-img" alt="AHANZEN LOGO">
+    </div>
+    <!--<i class="fa-solid fa-square-caret-right fa-2x"></i>-->
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    let currentIndex = 0;
+    const items = document.querySelectorAll('.carousel img');
+    const totalItems = items.length;
+
+    function showItem(index) {
+        if (index < 0) {
+            currentIndex = totalItems - 1;
+        } else if (index >= totalItems) {
+            currentIndex = 0;
+        } else {
+            currentIndex = index;
+        }
+
+        const newTransformValue = -currentIndex * 100 + '%';
+        document.querySelector('.carousel').style.transform = 'translateX(' + newTransformValue + ')';
+    }
+
+    function nextItem() {
+        showItem(currentIndex + 1);
+    }
+
+    function prevItem() {
+        showItem(currentIndex - 1);
+    }
+
+    // Event listeners for next and previous buttons
+    document.querySelector('.carousel-container').addEventListener('mouseover', function () {
+        document.querySelector('.carousel-container').style.cursor = 'grab';
+    });
+
+    document.querySelector('.carousel-container').addEventListener('mouseout', function () {
+        document.querySelector('.carousel-container').style.cursor = 'default';
+    });
+
+    document.querySelector('.carousel-container').addEventListener('mousedown', function () {
+        document.querySelector('.carousel-container').style.cursor = 'grabbing';
+    });
+
+    document.querySelector('.carousel-container').addEventListener('mouseup', function () {
+        document.querySelector('.carousel-container').style.cursor = 'grab';
+    });
+
+    document.querySelector('.carousel-container').addEventListener('click', nextItem);
+    document.querySelector('.carousel-container').addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        prevItem();
+    });
+
+    // Autoplay (uncomment the line below if you want autoplay)
+    // setInterval(nextItem, 3000);
+});
+</script>
 </body>
 </html>
