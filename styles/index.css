@@ -16,6 +16,7 @@
     body {
         margin: 0;
         padding: 0;
+        background-color: rgb(0, 0, 129);
     }
     .navbar ul {
         list-style-type: none;
@@ -34,6 +35,34 @@
     .navbar a:hover {
         background-color: rgb(52, 7, 124);
     }
+    .navbar-languages {
+        background-color: rgb(56, 7, 233);
+        overflow: hidden;
+    }
+    .navbar-languages a:hover {
+        background-color: rgb(52, 7, 124);
+    }
+    .menu-list {
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-list li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .languages {
+        color: white;
+        font-size: 20px;
+        padding: 14px 16px;
+        cursor: pointer;
+        border: none;
+        text-align: center;
+    }
     .games {
         background-color: gold;
         padding: 20px;
@@ -46,9 +75,6 @@
         width: 30%;
 
         /* animation: slideInLeft 1s ease-in 1s 1 normal both; */
-    }
-    .scroll {
-        background-color: rgb(0, 0, 129);
     }
     .ahanzen-title {
         background-color: rgb(52, 7, 214);
@@ -81,6 +107,11 @@
     .fa-brands.fa-instagram.fa-5x:hover, .fa-brands.fa-tiktok.fa-5x:hover, .fa-brands.fa-youtube.fa-5x:hover {
         color: rgb(179, 152, 0);
     }
+    .colombia, .uk {
+        width: 2%;
+        height: auto;
+        margin: 2px;
+    }
     /* .ahanzen-logo-div {
     } */
     @keyframes portal {
@@ -90,5 +121,18 @@
         to {
             transform: translateX(0);
         }
+    }
+    .carousel-container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .carousel-img {
+        width: 100%;
+        height: auto;
     }
 </style>
