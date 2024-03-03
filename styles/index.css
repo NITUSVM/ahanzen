@@ -130,9 +130,12 @@
     .carousel {
         display: flex;
         transition: transform 0.5s ease-in-out;
+        gap: 40px;
     }
     .carousel-img {
-        width: 100%;
+        width: 30%;
         height: auto;
+        border-radius: 20%;
+        border: solid 1px blue;
     }
 </style>
