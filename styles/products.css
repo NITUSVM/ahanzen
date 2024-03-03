@@ -8,10 +8,9 @@
     }
     body {
         height: 1000px;
-        padding-top: 65px;
-        padding-right: 10px;
-        padding-left: 10px;
+        padding: 0;
         margin: 0;
+        padding-top: 65px;
     }
     .header {
         display: flex;
@@ -58,25 +57,25 @@
     .products {
         width: (100% / 3);
         margin: auto;
-        display: block;
-        display: grid;
-        justify-content: space-between;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: inline-block;
+        margin: 19px;
     }
     .products img {
         width: 450px;
         margin: auto;
         height: 500px;
+        border: solid 1px black;
     }
     .product-description {
+        padding: 14px 16px;
         background-color: gold;
         color: white;
         font-weight: 700;
         font-family: roboto, arial;
         text-align: center;
-        width: 450px;
-        height: 500px;
         margin: auto;
+        border: solid 1px black;
+        margin-bottom: 6px;
     }
     .product-reviews {
         background-color: rgb(90, 90, 90);
@@ -97,9 +96,13 @@
     .carousel {
         display: flex;
         transition: transform 0.5s ease-in-out;
+        gap: 40px;
     }
     .carousel-img {
-        width: 100%;
+        width: 30%;
         height: auto;
+        border-radius: 20%;
+        border: solid 1px blue;
     }
+
 </style>
