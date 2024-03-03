@@ -8,9 +8,9 @@
     }
     body {
         height: 1000px;
-        padding-top: 65px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0;
+        margin: 0;
+        padding-top: 60px;
     }
     .header {
         display: flex;
@@ -64,11 +64,11 @@
         max-height: 400px;
         padding-right: 18px;
     }
-    .navbar-products li {
+    .navbar-products ul {
+        list-style-type: none;
         background-color: rgb(52, 7, 214);
         margin: 0;
         padding: 0;
-        list-style-type: none;
         overflow: hidden;
     }
     .navbar-products a {
@@ -82,12 +82,43 @@
     .navbar-products a:hover {
         background-color: rgb(52, 7, 124);
     }
-    .navbar-products ul {
+    .navbar-products li {
         float: left;
     }
     .ahanzen-logo {
         width: 40px;
         height: 40px;
         padding-right: 6px;
+    }
+    .dropdown {
+        display: inline-block;
+    }
+    .dropdown button {
+        color: white;
+        background-color: rgb(52, 7, 214);
+        border: none;
+        padding: 14px 16px;
+        cursor: pointer;
+    }
+    .dropdown a {
+        background-color: rgb(52, 7, 214);
+    }
+    .dropdown p {
+        padding: 14px;
+        display: block;
+        background-color: rgb(52, 7, 214);
+        color: white;
+    }
+    .dropdown button:hover {
+        background-color: rgb(52, 7, 124);
+    }
+    .dropdown:hover .content {
+        display: block;
+    }
+    .dropdown .content {
+        display: none;
+        position: absolute;
+        background-color: rgb(241, 241, 241);
+        box-shadow: 2px 2px 5px black;
     }
 </style>
