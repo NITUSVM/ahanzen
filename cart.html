@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>AHAZEN SHOPCART</title>
+    <title>AHANZEN SHOPCART</title>
     <link rel="stylesheet" href="styles/cart.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="imagery/favicon.ico">
@@ -12,7 +12,7 @@
 <body>
 <div class="header">
 <div class="left-section">
-    <a href="index.html"><img src="imagery/ahanzen-logo.jpg" class="ahanzen-logo"></a><a href="products.html"><i class="fa-solid fa-arrow-left fa-3x"></i></a><p>¡BIENVENIDO AL PORTAL DE AHANZEN!</p></div>
+<a href="index.html"><img src="imagery/ahanzen-logo.jpg" class="ahanzen-logo"></a><a href="products.html"><i class="fa-solid fa-arrow-left fa-3x"></i></a><p>¡BIENVENIDO AL PORTAL DE AHANZEN!</p></div>
 <div class="middle-section">
 <input type="text" placeholder="Search" class="search-text">
 <button><i class="fa-solid fa-magnifying-glass fa-3x"></i></button>    
@@ -23,15 +23,21 @@
 </a>
 </div>
 </div>
-<div class="navbar-inferior">
-<ul class="navbar-products">
-    <div><i class="fa-solid fa-bars"><il><a href="todo.html">TODO</a></il></i></div>
-    <il><a href="ofertas.html">OFERTAS DEL DÍA</a></il>
-    <il><a href="servicio.html">SERVICIO AL CLIENTE</a></il>
-    <il><a href="listas.html">LISTAS</a></il>
-    <il><a href="tarjetas.html">TARJETAS DE REGALO</a></il>
-    <il><a href="vender.html">VENDER</a></il>
+<nav class="navbar-products">
+<ul>
+    <div class="dropdown"><button><i class="fa-solid fa-bars"></i>TODO</button>
+    <div class="content">
+    <a href="account.html"><i class="fa-regular fa-user"></i>¡Hola! Identifícate</a>
+    <p>Contenidos</p>
+    <p>Programas y utilidades</p>
+    <p>Ayuda y configuración</p>
+    </div></div>
+    <li><a href="cart/ofertas.html">OFERTAS DEL DÍA</a></li>
+    <li><a href="cart/servicio.html">SERVICIO AL CLIENTE</a></li>
+    <li><a href="cart/listas.html">LISTAS</a></li>
+    <li><a href="cart/tarjetas.html">TARJETAS DE REGALO</a></li>
+    <li><a href="cart/vender.html">VENDER</a></li>
 </ul>
-</div>
+</nav>
 </body>
 </html>
