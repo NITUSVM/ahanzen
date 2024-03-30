@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>AHANZEN EN</title>
+<title>AHANZEN EN</title>
     <link rel="stylesheet" href="styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="imagery/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -19,10 +18,10 @@
 </ul>
 </nav>
 <div class="navbar-languages">
-<div class="languages" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i> MENU</div>
+<button class="languages" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i>MENU</button>
 <ul class="menu-list" id="menuList">
-    <li><a href="index-es.html"><img src="imagery/co.svg" class="colombia">ESPAÑOL</a></li>
-    <li><a href="index.html"><img src="imagery/uk.png" class="uk">ENGLISH</a></li>
+    <li><a href="index-es.html"><img src="imagery/co.svg" id="co">ESPAÑOL</a></li>
+    <li><a href="index.html"><img src="imagery/uk.png" id="uk">ENGLISH</a></li>
 </ul>
 </div>
 <div class="carousel-container">
@@ -47,64 +46,6 @@
     <a href="https://www.tiktok.com/@ahanzen6?_t=8jkEvcBnttm&_r=1"><i class="fa-brands fa-tiktok fa-5x"></a></i></a>
     <a href="https://www.youtube.com/@AHANZEN"><i class="fa-brands fa-youtube fa-5x"></i></a>
 </div>
-<script>
-    function toggleMenu() {
-    var menuList = document.getElementById("menuList");
-    menuList.style.display = (menuList.style.display === 'none' || menuList.style.display === '') ? 'block' : 'none';
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    let currentIndex = 0;
-    const items = document.querySelectorAll('.carousel img');
-    const totalItems = items.length;
-
-    function showItem(index) {
-        if (index < 0) {
-            currentIndex = totalItems - 1;
-        } else if (index >= totalItems) {
-            currentIndex = 0;
-        } else {
-            currentIndex = index;
-        }
-
-        const newTransformValue = -currentIndex * 100 + '%';
-        document.querySelector('.carousel').style.transform = 'translateX(' + newTransformValue + ')';
-    }
-
-    function nextItem() {
-        showItem(currentIndex + 1);
-    }
-
-    function prevItem() {
-        showItem(currentIndex - 1);
-    }
-
-    // Event listeners for next and previous buttons
-    document.querySelector('.carousel-container').addEventListener('mouseover', function () {
-        document.querySelector('.carousel-container').style.cursor = 'grab';
-    });
-
-    document.querySelector('.carousel-container').addEventListener('mouseout', function () {
-        document.querySelector('.carousel-container').style.cursor = 'default';
-    });
-
-    document.querySelector('.carousel-container').addEventListener('mousedown', function () {
-        document.querySelector('.carousel-container').style.cursor = 'grabbing';
-    });
-
-    document.querySelector('.carousel-container').addEventListener('mouseup', function () {
-        document.querySelector('.carousel-container').style.cursor = 'grab';
-    });
-
-    document.querySelector('.carousel-container').addEventListener('click', nextItem);
-    document.querySelector('.carousel-container').addEventListener('contextmenu', function (e) {
-        e.preventDefault();
-        prevItem();
-    });
-
-    // Autoplay (uncomment the line below if you want autoplay)
-    // setInterval(nextItem, 3000);
-});
-</script>
+<script src="javascript/index.js"></script>
 </body>
 </html>
