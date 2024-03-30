@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>PRODUCTS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<title>PRODUCTS</title>
     <link rel="stylesheet" href="styles/products.css">
     <link rel="icon" href="imagery/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,14 +26,33 @@
 </a>
 </div>
 </div>
+<nav class="navbar-products">
+<ul>
+    <div class="dropdown"><button class="all" onclick="openOverlay()"><i class="fa-solid fa-bars"></i>ALL</button>
+    <div class="content" id="content">
+    <a href="account.html"><i class="fa-regular fa-user"></i>¡Hola! Identifícate</a>
+    <a href="#">Contenidos</a>
+    <a href="#">Programas y utilidades</a>
+    <a href="#">Ayuda y configuración</a>
+    <button onclick="closeOverlay()"><i class="fa-solid fa-xmark"></i></button>
+    </div></div>
+    <div class="navbar-right">
+    <li><a href="offers.html" onerror="redirectToAlternative()">DAY OFFERS</a></li>
+    <li><a href="service.html" onerror="redirectToAlternative()">COSTUMER SERVICE</a></li>
+    <li><a href="lists.html" onerror="redirectToAlternative()">LISTS</a></li>
+    <li><a href="cards.html" onerror="redirectToAlternative()">GIFTCARDS</a></li>
+    <li><a href="sell.html" onerror="redirectToAlternative()">SELL</a></li>
+    </div>
+</ul>
+</nav>
 <div class="carousel-container">
     <!--<i class="fa-solid fa-square-caret-left fa-2x"></i>-->
     <div class="carousel">
         <img src="imagery/Casa en Belen.jpg" class="carousel-img" alt="AHANZEN LOGO">
         <img src="imagery/Casa Manantiales.png" class="carousel-img" alt="AHANZEN LOGO">
-        <img src="imagery/Casa Manantiales.png" class="carousel-img" alt="AHANZEN LOGO">
-        <img src="imagery/ahanzen-logo.jpg" class="carousel-img" alt="AHANZEN LOGO">
-        <img src="imagery/ahanzen-logo.jpg" class="carousel-img" alt="AHANZEN LOGO">
+        <img src="imagery/Casa unifamiliar.png" class="carousel-img" alt="AHANZEN LOGO">
+        <img src="imagery/Casa la virginia.png" class="carousel-img" alt="AHANZEN LOGO">
+        <img src="imagery/Casa Lindaraja.png" class="carousel-img" alt="AHANZEN LOGO">
         <img src="imagery/ahanzen-logo.jpg" class="carousel-img" alt="AHANZEN LOGO">
         <img src="imagery/ahanzen-logo.jpg" class="carousel-img" alt="AHANZEN LOGO">
         <img src="imagery/ahanzen-logo.jpg" class="carousel-img" alt="AHANZEN LOGO">
@@ -42,6 +60,8 @@
     </div>
     <!--<i class="fa-solid fa-square-caret-right fa-2x"></i>-->
 </div>
+<p class="sellOffer">ELECTRONICS</p>
+<div id="electronicContainer">
 <div class="products">
     <a target="_blank" href="cart.html"><img src="imagery/Consola Xbox.jpg" alt="Consola Xbox"></a>
     <div class="product-description">CONSOLA XBOX</div>
@@ -54,6 +74,9 @@
     <a target="_blank" href="cart.html"><img src="imagery/NINTENDO-SWITCH.png" alt="Nintendo Switch"></a>
     <div class="product-description">NINTENDO SWITCH</div>
 </div>
+</div>
+<p class="sellOffer">HOUSES</p>
+<div id="houseContainer">
 <div class="products">
     <a target="_blank" href="cart.html"><img src="imagery/Casa en Belen.jpg" alt="Casa Belen"></a>
     <div class="product-description">CASA BELEN</div>
@@ -63,10 +86,47 @@
     <div class="product-description">CASA MANANTIALES</div>
 </div>
 <div class="products">
-    <a target="_blank" href="cart.html"><img src="imagery/Casa unifamiliar 1.png" alt="Casa unifamiliar"></a>
-    <div class="product-description">CASA UNIFAMILIAR</div>
-    <!--<div class="product-reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>-->
+    <a target="_blank" href="cart.html"><img src="imagery/Casa Lindaraja.png" alt="Casa Lindaraja"></a>
+    <div class="product-description">CASA LINDARAJA</div>
 </div>
-<script src="java/products.js"></script>
+<div class="products">
+    <a target="_blank" href="cart.html"><img src="imagery/Casa unifamiliar.png" alt="Casa unifamiliar"></a>
+    <div class="product-description">CASA UNIFAMILIAR</div>
+</div>
+<div class="products">
+    <a target="_blank" href="cart.html"><img src="imagery/Casa la virginia.png" alt="Casa la Virginia"></a>
+    <div class="product-description">CASA VIRGINIA</div>
+</div>
+<div class="products">
+    <a target="_blank" href="cart.html"><img src="imagery/CasaManantiales.png" alt="Casa Manantiales"></a>
+    <div class="product-description">CASA MANANTIALES</div>
+</div>
+<!-- <div class="products">
+    <a target="_blank" href="cart.html"><img src="imagery/Casa en Belen.jpg" alt="Casa Belen"></a>
+    <div class="product-description">CASA BELEN</div>
+</div>
+<div class="products">
+    <a target="_blank" href="cart.html"><img src="imagery/Casa Manantiales.png" alt="Casa Manantiales"></a>
+    <div class="product-description">CASA MANANTIALES</div>
+</div>
+<div class="products">
+    <a target="_blank" href="cart.html"><img src="imagery/Casa Lindaraja.png" alt="Casa Lindaraja"></a>
+    <div class="product-description">CASA LINDARAJA</div>
+</div>
+<div class="products">
+    <a target="_blank" href="cart.html"><img src="imagery/Casa unifamiliar.png" alt="Casa unifamiliar"></a>
+    <div class="product-description">CASA UNIFAMILIAR</div>
+</div>
+<div class="products">
+    <a target="_blank" href="cart.html"><img src="imagery/Casa la virginia.png" alt="Casa la Virginia"></a>
+    <div class="product-description">CASA VIRGINIA</div>
+</div>
+<div class="products">
+    <a target="_blank" href="cart.html"><img src="imagery/CasaManantiales.png" alt="Casa Manantiales"></a>
+    <div class="product-description">CASA MANANTIALES</div>
+</div> -->
+</div>
+    <!--<div class="product-reviews"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>-->
+<script src="javascript/products.js"></script>
 </body>
 </html>
