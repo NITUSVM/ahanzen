@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>AHANZEN EN</title>
+<title>AHANZEN EN</title>
     <link rel="stylesheet" href="styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="imagery/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -19,10 +18,10 @@
 </ul>
 </nav>
 <div class="navbar-languages">
-<div class="languages" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i> MENU</div>
+<button class="languages" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i>MENU</button>
 <ul class="menu-list" id="menuList">
-    <li><a href="index-es.html"><img src="imagery/co.svg" class="colombia">ESPAÑOL</a></li>
-    <li><a href="index.html"><img src="imagery/uk.png" class="uk">ENGLISH</a></li>
+    <li><a href="index-es.html"><img src="imagery/co.svg" id="co">ESPAÑOL</a></li>
+    <li><a href="index.html"><img src="imagery/uk.png" id="uk">ENGLISH</a></li>
 </ul>
 </div>
 <div class="carousel-container">
@@ -40,6 +39,9 @@
     </div>
     <!--<i class="fa-solid fa-square-caret-right fa-2x"></i>-->
 </div>
+    <div id="videoPlayer">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mf8F3pslS8o?si=9WuAkzlVLKUGc744&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <h1 class="ahanzen-title">AHANZEN</h1>
     <h2 class="brand-slogan">¡Sales from A to Z! <br> Welcome to AHANZEN, We hope you enjoy a service of first quality brought to you by our team!</h2>
     <p class="games"><a href="rockpaperscissors.html">WANT TO CHECK OUR GAMES?</a></p>
@@ -47,7 +49,8 @@
     <a href="https://www.instagram.com/ahanzen_/?igsh=cDVnN2l0cDhocml2&utm_source=qr"><i class="fa-brands fa-instagram fa-5x"></i></a>
     <a href="https://www.tiktok.com/@ahanzen6?_t=8jkEvcBnttm&_r=1"><i class="fa-brands fa-tiktok fa-5x"></a></i></a>
     <a href="https://www.youtube.com/@AHANZEN"><i class="fa-brands fa-youtube fa-5x"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook fa-5x"></i></a>
 </div>
-<script src="java/index.js"></script>
+<script src="javascript/index.js"></script>
 </body>
 </html>
