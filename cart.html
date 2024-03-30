@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>AHANZEN SHOPCART</title>
+<title>AHANZEN SHOPCART</title>
     <link rel="stylesheet" href="styles/cart.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="imagery/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -25,19 +24,23 @@
 </div>
 <nav class="navbar-products">
 <ul>
-    <div class="dropdown"><button><i class="fa-solid fa-bars"></i>TODO</button>
-    <div class="content">
-    <a href="account.html"><i class="fa-regular fa-user"></i>¡Hola! Identifícate</a>
-    <p>Contenidos</p>
-    <p>Programas y utilidades</p>
-    <p>Ayuda y configuración</p>
+    <div class="dropdown"><button class="all" onclick="openOverlay()"><i class="fa-solid fa-bars"></i>ALL</button>
+    <div class="content" id="content">
+    <a href="signup.html"><i class="fa-regular fa-user"></i>¡Hola! Identifícate</a>
+    <a href="#">Contenidos</a>
+    <a href="#">Programas y utilidades</a>
+    <a href="#">Ayuda y configuración</a>
+    <button onclick="closeOverlay()"><i class="fa-solid fa-xmark"></i></button>
     </div></div>
-    <li><a href="cart/ofertas.html">OFERTAS DEL DÍA</a></li>
-    <li><a href="cart/servicio.html">SERVICIO AL CLIENTE</a></li>
-    <li><a href="cart/listas.html">LISTAS</a></li>
-    <li><a href="cart/tarjetas.html">TARJETAS DE REGALO</a></li>
-    <li><a href="cart/vender.html">VENDER</a></li>
+    <div class="navbar-right">
+    <li><a href="offers.html" onerror="redirectToAlternative()">DAY OFFERS</a></li>
+    <li><a href="service.html" onerror="redirectToAlternative()">COSTUMER SERVICE</a></li>
+    <li><a href="lists.html" onerror="redirectToAlternative()">LISTS</a></li>
+    <li><a href="cards.html" onerror="redirectToAlternative()">GIFTCARDS</a></li>
+    <li><a href="sell.html" onerror="redirectToAlternative()">SELL</a></li>
+    </div>
 </ul>
 </nav>
 </body>
+<script src="javascript/cart.js"></script>
 </html>
