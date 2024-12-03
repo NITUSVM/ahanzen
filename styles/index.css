@@ -1,91 +1,9 @@
 .cocochoco {}
-p {
-    font-size: 24px;
-    font-family: robot, arial;
+.games a {
+    color: gold;
+    font-weight: 700;
 }
-a {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-a:hover {
-    color: rgb(191, 191, 191);
-}
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(0, 0, 129);
-}
-.navbar ul {
-    list-style-type: none;
-    background-color: rgb(52, 7, 214);
-    padding: 0;
-    margin: 0;
-}
-.navbar a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 15px;
-    text-align: center;
-    transition: 0.3s;
-}
-.navbar a:hover {
-    background-color: rgb(52, 7, 124);
-}
-.navbar-languages {
-    background-color: rgb(56, 7, 233);
-    overflow: hidden;
-}
-.navbar-languages a:hover {
-    background-color: rgb(52, 7, 124);
-}
-.menu-list {
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    display: none;
-}
-.menu-list li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.languages {
-    font-size: 20px;
-    padding: 14px 16px;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    border: none;
-    color: white;
-    width: 100%;
-    background: rgb(52, 7, 214);
-}
-.languages:hover {
-    background: rgb(52, 7, 124);
-}
-.fa-solid.fa-bars {
-    color: white;
-    margin-right: 5px;
-}
-.games {
-    background-color: gold;
-    padding: 20px;
-    text-align: center;
-}
-.ahanzen-logo {
-    display: block;
-    margin: auto;
-    margin-bottom: -21px;
-    width: 30%;
-    /* animation: slideInLeft 1s ease-in 1s 1 normal both; */
-}
-.ahanzen-title {
-    background-color: rgb(52, 7, 214);
+.ahanzen-title, .games {
     color: gold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700px;
@@ -93,60 +11,59 @@ body {
     padding: 20px;
 }
 .brand-slogan {
-    background-color: gold;
-    color: aliceblue;
+    background: gold;
+    color: white;
     font-family: roboto, arial;
     text-align: center;
     padding: 20px;
 }
-.icons-contact {
-    text-align: center;
-    background-color: rgb(52, 7, 214);
-    padding: 15px;
-}
-.icons-contact a {
-    text-decoration: none;
-    margin-right: 20px;
-}
-.fa-brands.fa-instagram.fa-5x, .fa-brands.fa-tiktok.fa-5x, .fa-brands.fa-youtube.fa-5x, .fa-brands.fa-facebook.fa-5x {
-    color: gold;
-    transition: 0.3s;
-}
-.fa-brands.fa-instagram.fa-5x:hover, .fa-brands.fa-tiktok.fa-5x:hover, .fa-brands.fa-youtube.fa-5x:hover, .fa-brands.fa-facebook.fa-5x:hover {
-    color: rgb(179, 152, 0);
-}
-@keyframes portal {
-    from {
-        transform: translateX(-300px);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
 .carousel-container {
-    width: 80%;
-    margin: auto;
+    width: 100%;
     overflow: hidden;
-    margin-top: 15px;
+    padding: 20px 10px;
+    background: rgb(52, 7, 124);
 }
 .carousel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    gap: 40px;
+    gap: 20px;
+    animation: slide 16s ease-in infinite;
 }
-.carousel-img {
-    width: 30%;
-    height: auto;
-    border-radius: 20%;
-    border: solid 1px blue;
+.carousel img {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-33%);
+    }
+    30% {
+        transform: translateX(-66%);
+    }
+    50% {
+        transform: translateX(-99%);
+    }
+    55% {
+        transform: translateX(-99%);
+    }
+    75% {
+        transform: translateX(-66%);
+    }
+    80% {
+        transform: translateX(-33%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+main {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 #videoPlayer {
     display: flex;
     justify-content: center;
     margin: 20px;
-}
-#uk, #co {
-    width: 2%;
-    margin: 2px;
-    margin-right: 5px;
 }
