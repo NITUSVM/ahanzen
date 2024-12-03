@@ -1,0 +1,126 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(52, 7, 214);
+}
+p {
+    font-size: 24px;
+    font-family: robot, arial;
+}
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+a:hover {
+    color: rgb(191, 191, 191);
+}
+.navbar ul {
+    list-style-type: none;
+    background: rgb(52, 7, 214);
+    padding: 0;
+    margin: 0;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    background: rgb(52, 7, 124);
+}
+.navbar-languages {
+    background: rgb(56, 7, 233);
+    overflow: hidden;
+}
+
+.navbar-languages a:hover {
+    background: rgb(52, 7, 124);
+}
+.navbar-languages i {
+    color: white;
+    margin-right: 5px;
+}
+.navbar-languages button {
+    font-size: 20px;
+    padding: 14px 16px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: none;
+    color: white;
+    width: 100%;
+    background: rgb(52, 7, 214);
+}
+.navbar-languages button:hover {
+    background: rgb(52, 7, 124);
+}
+.menu-list {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.menu-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#uk, #co {
+    width: 2%;
+    margin: 2px;
+    margin-right: 5px;
+}
+.icons-contact {
+    text-align: center;
+    background: rgb(52, 7, 214);
+    padding: 15px;
+    position: relative;
+}
+.icons-contact a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+.icons-contact i {
+    color: gold;
+    transition: 0.5s;
+}
+.icons-contact i:hover {
+    color: rgb(179, 152, 0);
+}
+.icons-contact p {
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+    font-weight: 700;
+    color: gold;
+}
+
+/*Otras secciones*/
+
+.head {
+    background-color: rgb(52, 7, 214);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    color: gold;
+    font-weight: 700;
+    margin: 0;
+}
+.home {
+    position: absolute;
+}
+.home a {
+    text-decoration: none;
+    color: gold;
+    transition: 0.3s;
+}
+.home a:hover {
+    color: rgb(204, 173, 0);
+}
