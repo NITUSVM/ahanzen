@@ -1,16 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-.head {
-    background-color: rgb(52, 7, 214);
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px;
-    color: gold;
-    font-weight: 700
-    margin: 0;
-}
 .information {
     background-color: gold;
     font-family: roboto, arial;
@@ -37,23 +24,8 @@ body {
 .fa-solid.fa-circle-user.fa-5x {
     margin-right: 100px;
 }
-.home {
-    position: absolute;
-}
-.home a {
-    text-decoration: none;
-    color: gold;
-    transition: 0.3s;
-}
-.home a:hover {
-    color: rgb(204, 173, 0);
-}
-.icons-contact {
+.contact {
     text-align: center;
     background-color: rgb(52, 7, 214);
     padding: 15px;
-}
-.icons-contact a {
-    text-decoration: none;
-    margin-right: 20px;
 }
