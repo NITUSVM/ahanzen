@@ -1,149 +1,58 @@
-p {
-    font-family: roboto, arial;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-body {
-    height: 1000px;
-    padding: 0;
-    margin: 0;
-    padding-top: 60px;
-}
-.header {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    justify-content: space-between;
-    background-color: rgb(52, 7, 214);
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 60px;
-    width: 100%;
-}
-.search-text {
-    border-radius: 2px;
-    border-color: transparent;
-    background-color: gold;
-    flex: 1;
-    height: 34px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
-    max-width: 800px;
-}
-.search-button {
-    width: 60px;
-    height: 32px;
-    background-color: rgb(240, 240, 240);
-    border: 1px solid rgb(192, 192, 192);
-    margin-left: -1;
-}
-.left-section {
-    margin-left: 20px;
-    margin-right: 100px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-weight: 700;
-}
-.middle-section {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-.right-section {
-    margin-left: 100px;
-    margin-right: 20px;
-    display: flex;
-}
-.products {
-    max-width: 400px;
-    max-height: 400px;
-    padding-right: 18px;
-}
-.navbar-products ul {
-    list-style-type: none;
-    background-color: rgb(52, 7, 214);
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-.navbar-products a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 14px 16px;
-    text-align: center;
-    transition: 0.3s;
-}
-.navbar-products a:hover {
-    background-color: rgb(52, 7, 124);
-    border: 1px solid white;
-}
-.navbar-products li {
-    float: left;
-}
-.navbar-right {
-    display: inline-block;
-    position: absolute;
-}
-.ahanzen-logo {
-    width: 40px;
-    height: 40px;
-    padding-right: 6px;
-}
-.fa-solid.fa-arrow-left.fa-3x {
-    color: gold;
-}
-.fa-solid.fa-arrow-left.fa-3x:hover {
-    color: rgb(231, 197, 0);
-}
-.fa-solid.fa-arrow-left.fa-3x:active {
-    color: rgb(206, 175, 0)
-}
-.dropdown {
-    display: inline-block;
-    height: 50px;
-    align-items: center;
-    margin-left: 10px;
-}
-.dropdown button {
-    color: white;
-    background-color: rgb(52, 7, 214);
-    border: none;
-    padding: 14px 16px;
-    cursor: pointer;
-    display: inline-block;
+/* .back {
+    background: rgb(214, 7, 54);
+    padding: 16px 18px;
+    margin-top: -10px;
+    z-index: 2;
     position: relative;
 }
-.dropdown button:hover {
-    background-color: rgb(52, 7, 124);
-    border: 1px solid white;
+.back button {
+    background: rgb(214, 7, 54);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 18px;
+    margin-top: -9px;
+    width: 100%;
 }
-/* .dropdown p {
-    padding: 14px;
-    display: block;
-    background-color: rgb(52, 7, 214);
-    color: white;
-}
-.dropdown:hover .content {
-    display: block;
+.back button:hover {
+    background: rgb(163, 5, 42);
 } */
-.dropdown a {
-    background-color: rgb(52, 7, 214);
+main {
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
 }
-.dropdown .content {
-	display: none;
-	background-color: rgb(241, 241, 241);
-	box-shadow: 2px 2px 5px black;
+.space .element {
+    display: flex;
+    overflow: hidden;
+    height: 500px;
+    margin: 20px;
 }
-.content {
+.space .element .information {
+    background: white;
+    padding: 20px 30px;
+    position: relative;
+}
+.space .element .information .title {
+    font-family: Impact;
+    margin-bottom: 10px;
+}
+.space .element .information .description {
+    font-size: 5vh;
+    font-family: Verdana;
+}
+.space .element .information .price {
+    font-family: 'Franklin Gothic Medium';
     position: absolute;
-    background: rgba(0, 0, 0, 0.8);
-    transition: 1s;
-    z-index: 2;
-    top: 0;
+    background: green;
+    color: white;
+    width: 100%;
+    bottom: 0;
     left: 0;
-    height: 100%;
-    display: grid;
+}
+.space .element .information .title, .price {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 10vh;
 }
