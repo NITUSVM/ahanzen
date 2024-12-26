@@ -3,6 +3,7 @@
 <head>
 <title>AHANZEN SHOPCART</title>
     <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="styles/generalSecond.css">
     <link rel="icon" href="imagery/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -10,37 +11,94 @@
 </head>
 <body>
 <div class="header">
-<div class="left-section">
-<a href="index.html"><img src="imagery/ahanzen-logo.jpg" class="ahanzen-logo"></a><a href="products.html"><i class="fa-solid fa-arrow-left fa-3x"></i></a><p>¡BIENVENIDO AL PORTAL DE AHANZEN!</p></div>
-<div class="middle-section">
-<input type="text" placeholder="Search" class="search-text">
-<button><i class="fa-solid fa-magnifying-glass fa-3x"></i></button>    
-</div>
-<div class="right-section">
-<a href="cart.html">
-<button><i class="fa-solid fa-cart-shopping fa-3x"></i></button>
-</a>
-</div>
-</div>
-<nav class="navbar-products">
-<ul>
-    <div class="dropdown"><button class="all" onclick="openOverlay()"><i class="fa-solid fa-bars"></i>ALL</button>
-    <div class="content" id="content">
-    <a href="signup.html"><i class="fa-regular fa-user"></i>¡Hola! Identifícate</a>
-    <a href="#">Contenidos</a>
-    <a href="#">Programas y utilidades</a>
-    <a href="#">Ayuda y configuración</a>
-    <button onclick="closeOverlay()"><i class="fa-solid fa-xmark"></i></button>
-    </div></div>
-    <div class="navbar-right">
-    <li><a href="offers.html" onerror="redirectToAlternative()">DAY OFFERS</a></li>
-    <li><a href="service.html" onerror="redirectToAlternative()">COSTUMER SERVICE</a></li>
-    <li><a href="lists.html" onerror="redirectToAlternative()">LISTS</a></li>
-    <li><a href="cards.html" onerror="redirectToAlternative()">GIFTCARDS</a></li>
-    <li><a href="sell.html" onerror="redirectToAlternative()">SELL</a></li>
+    <div class="left-section">
+        <a href="index.html"><img src="imagery/ahanzen-logo.jpg" alt="AHANZEN" /></a><p>¡BIENVENIDO AL PORTAL DE AHANZEN!</p>
     </div>
-</ul>
+    <div class="middle-section">
+        <input type="text" placeholder="Search" />
+        <button><i class="fa-solid fa-magnifying-glass fa-3x"></i></button>    
+    </div>
+    <div class="right-section">
+        <a href="cart.html"><button><i class="fa-solid fa-cart-shopping fa-3x"></i></button></a>
+    </div>
+</div>
+<nav class="navbar-services">
+    <ul>
+        <div class="dropdown">
+            <button class="all" onclick="openOverlay()"><i class="fa-solid fa-bars"></i>ALL</button>
+            <div class="content" id="content">
+                <a href="signup.html"><i class="fa-regular fa-user"></i>¡Hola! Identifícate</a>
+                <a href="#">Contenidos</a>
+                <a href="#">Programas y utilidades</a>
+                <a href="#">Ayuda y configuración</a>
+                <button onclick="closeOverlay()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <li><a href="offers.html">DAY OFFERS</a></li>
+            <li><a href="service.html">COSTUMER SERVICE</a></li>
+            <li><a href="lists.html">LISTS</a></li>
+            <li><a href="cards.html">GIFTCARDS</a></li>
+            <li><a href="sell.html">SELL</a></li>
+        </div>
+    </ul>
+    <div>
+        <button onclick="back()" class="back">RETURN</button>
+    </div>
 </nav>
-</body>
+<div class="space">
+    <div class="element">
+        <div class="image">
+            <img src="imagery/ahanzen-logo.jpg" alt="chosenProduct"/>
+        </div>
+        <div class="information">
+            <div class="title">NULL</div>
+            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur natus ut! Sequi possimus corporis amet eveniet vel, ducimus quibusdam voluptatibus iusto iste incidunt est dolorem eius, similique, earum a.</div>
+            <div class="price">$100</div>
+        </div>
+    </div>
+    <div class="element">
+        <div class="image">
+            <img src="imagery/ahanzen-logo.jpg" alt="chosenProduct"/>
+        </div>
+        <div class="information">
+            <div class="title">NULL</div>
+            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur natus ut! Sequi possimus corporis amet eveniet vel, ducimus quibusdam voluptatibus iusto iste incidunt est dolorem eius, similique, earum a.</div>
+            <div class="price">$100</div>
+        </div>
+    </div>
+    <div class="element">
+        <div class="image">
+            <img src="imagery/ahanzen-logo.jpg" alt="chosenProduct"/>
+        </div>
+        <div class="information">
+            <div class="title">NULL</div>
+            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur natus ut! Sequi possimus corporis amet eveniet vel, ducimus quibusdam voluptatibus iusto iste incidunt est dolorem eius, similique, earum a.</div>
+            <div class="price">$100</div>
+        </div>
+    </div>
+    <div class="element">
+        <div class="image">
+            <img src="imagery/ahanzen-logo.jpg" alt="chosenProduct"/>
+        </div>
+        <div class="information">
+            <div class="title">NULL</div>
+            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur natus ut! Sequi possimus corporis amet eveniet vel, ducimus quibusdam voluptatibus iusto iste incidunt est dolorem eius, similique, earum a.</div>
+            <div class="price">$100</div>
+        </div>
+    </div>
+    <div class="element">
+        <div class="image">
+            <img src="imagery/ahanzen-logo.jpg" alt="chosenProduct"/>
+        </div>
+        <div class="information">
+            <div class="title">NULL</div>
+            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur natus ut! Sequi possimus corporis amet eveniet vel, ducimus quibusdam voluptatibus iusto iste incidunt est dolorem eius, similique, earum a.</div>
+            <div class="price">$100</div>
+        </div>
+    </div>
+</div>
 <script src="javascript/cart.js"></script>
+<script src="javascript/general.js"></script>
+</body>
 </html>
