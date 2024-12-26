@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>SELL</title>
-    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/generalSecond.css">
     <link rel="icon" href="imagery/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +10,41 @@
 </head>
 <body>
 <div class="header">
-<div class="left-section">
-<a href="index.html"><img src="imagery/ahanzen-logo.jpg" class="ahanzen-logo"></a><a href="cart.html"><i class="fa-solid fa-arrow-left fa-3x"></i></a><p>¡BIENVENIDO AL PORTAL DE AHANZEN!</p></div>
-<div class="middle-section">
-<input type="text" placeholder="Search" class="search-text">
-<button><i class="fa-solid fa-magnifying-glass fa-3x"></i></button>    
+    <div class="left-section">
+        <a href="index.html"><img src="imagery/ahanzen-logo.jpg" alt="AHANZEN" /></a><p>¡BIENVENIDO AL PORTAL DE AHANZEN!</p>
+    </div>
+    <div class="middle-section">
+        <input type="text" placeholder="Search" />
+        <button><i class="fa-solid fa-magnifying-glass fa-3x"></i></button>    
+    </div>
+    <div class="right-section">
+        <a href="cart.html"><button><i class="fa-solid fa-cart-shopping fa-3x"></i></button></a>
+    </div>
 </div>
-<div class="right-section">
-<a href="cart.html">
-<button><i class="fa-solid fa-cart-shopping fa-3x"></i></button>
-</a>
-</div>
-</div>
+<nav class="navbar-services">
+    <ul>
+        <div class="dropdown">
+            <button class="all" onclick="openOverlay()"><i class="fa-solid fa-bars"></i>ALL</button>
+            <div class="content" id="content">
+                <a href="signup.html"><i class="fa-regular fa-user"></i>¡Hola! Identifícate</a>
+                <a href="#">Contenidos</a>
+                <a href="#">Programas y utilidades</a>
+                <a href="#">Ayuda y configuración</a>
+                <button onclick="closeOverlay()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <li><a href="offers.html">DAY OFFERS</a></li>
+            <li><a href="service.html">COSTUMER SERVICE</a></li>
+            <li><a href="lists.html">LISTS</a></li>
+            <li><a href="cards.html">GIFTCARDS</a></li>
+            <li><a href="sell.html">SELL</a></li>
+        </div>
+    </ul>
+    <div>
+        <button onclick="back()" class="back">RETURN</button>
+    </div>
+</nav>
+<script src="javascript/general.js"></script>
 </body>
 </html>
