@@ -3,21 +3,51 @@
 <head>
 <title>CONTACT AHANZEN</title>
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/generalFirst.css">
     <link rel="icon" href="imagery/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/f6e715e5c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT AZ</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="navbar-languages">
+        <button onclick="toggleMenu()"><i class="fa-solid fa-bars"></i>MENU</button>
+        <ul class="menu-list" id="menuList">
+            <li><a href="index-es.html"><img src="imagery/co.svg" id="co">ESPAÑOL</a></li>
+            <li><a href="index.html"><img src="imagery/uk.png" id="uk">ENGLISH</a></li>
+        </ul>
+    </div>
 <main>
-    <h1 class="head"><div class="home"><a href="index.html"><i class="fa-solid fa-house fa-1x"></i></a></div>¿Quiénes somos?</h1>
-    <p class="information">Somos un grupo de personas comprometidas con el futuro y las ventas, somos tus socios de confianza. <br> Bienvenido a AHANZEN <span class="span">#ventasdelaAalaZ.</span></p>
+    <h1 class="head"><div class="home"><a href="index.html"><i class="fa-solid fa-house fa-1x"></i></a></div>WHO ARE WE?</h1>
 </main>
-<div><img src="imagery/armenia.jpg" class="armenia-photo" alt="ARMENIA"></div>
-<h2 class="employees-selection">Selección de Empleados:</h2>
-<div class="employees">
-    <p class="employees-name"><i class="fa-solid fa-circle-user fa-5x"></i>EMPLOYEE NO.1</p>
-    <p class="employees-name"><i class="fa-solid fa-circle-user fa-5x"></i>EMPLOYEE NO.2</p>
+<div class="information">
+    <p>We are a group of people compromised with the future and the sales we are your trustworthy pals <br>Welcome to AHANZEN <span class="span">#ventasdelaAalaZ.</span></p>
 </div>
+<div>
+    <img src="imagery/armenia.jpg" class="armenia-photo" alt="ARMENIA">
+</div>
+<div class="employees-selection">
+    <h2>Selection of Employees:</h2>
+</div>
+<div class="employees">
+    <p><i class="fa-solid fa-circle-user fa-5x"></i>EMPLOYEE NO.1</p>
+    <p><i class="fa-solid fa-circle-user fa-5x"></i>EMPLOYEE NO.2</p>
+</div>
+<div class="icons-contact">
+    <a href="https://www.instagram.com/ahanzen_"><i class="fa-brands fa-instagram fa-5x"></i></a>
+    <a href="https://www.tiktok.com/@ahanzen6"><i class="fa-brands fa-tiktok fa-5x"></a></i></a>
+    <a href="https://www.youtube.com/@AHANZEN"><i class="fa-brands fa-youtube fa-5x"></i></a>
+    <a href="https://www.facebook.com/AHANZENTM/"><i class="fa-brands fa-facebook fa-5x"></i></a>
+    <p>AHANZEN TEAM &#169;</p>
+</div>
+<script src="javascript/general.js"></script>
 </body>
 </html>
