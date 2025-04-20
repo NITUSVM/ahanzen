@@ -16,7 +16,7 @@
 .employees-selection {
     background-color: gold;
     font-family: roboto, arial;
-    color: whit;
+    color: white;
     text-shadow: 1px 2px 3px;
     padding: 20px;
     text-align: center;
@@ -25,7 +25,23 @@
     margin-right: 100px;
 }
 .contact {
-    text-align: center;
-    background-color: rgb(52, 7, 214);
-    padding: 15px;
+    margin-top: 30px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border: white solid 3px;
+    border-radius: 50px;
+    padding: 13px;
+}
+.contact i {
+    margin-left: 13px;
+}
+.contact a {
+    transition: 0.3s;
+}
+.contact a:hover {
+    background: gold;
+    border: white solid 3px;
+    padding: 30px 666px;
+    border-radius: 50px;
 }
