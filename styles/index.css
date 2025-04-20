@@ -25,39 +25,41 @@
 }
 .carousel {
     display: flex;
-    gap: 20px;
-    animation: slide 16s ease-in infinite;
+    gap: 18px;
+    animation: slide 18s ease-in infinite;
 }
 .carousel img {
+    width: 480px;
+    height: auto;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 @keyframes slide {
     0% {
-        transform: translateX(0);
+        transform: translateX(600px);
     }
     25% {
-        transform: translateX(-33%);
+        transform: translateX(200px);
     }
     30% {
-        transform: translateX(-66%);
+        transform: translateX(-200px);
     }
     50% {
-        transform: translateX(-99%);
+        transform: translateX(-600px);
     }
     55% {
-        transform: translateX(-99%);
+        transform: translateX(-600px);
     }
     75% {
-        transform: translateX(-66%);
+        transform: translateX(-200px);
     }
     80% {
-        transform: translateX(-33%);
+        transform: translateX(200px);
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(600px);
     }
 }
-main {
+.carousel-exterior {
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -66,4 +68,6 @@ main {
     display: flex;
     justify-content: center;
     margin: 20px;
+}
+.breaker-navbar-carousel {
 }
